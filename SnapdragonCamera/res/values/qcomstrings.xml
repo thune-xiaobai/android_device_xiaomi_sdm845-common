@@ -421,7 +421,7 @@
      <string name="pref_camera_hfr_value_hsr_240">hsr240</string>
 
      <!-- Default noise reduction setting. Do not translate. -->
-     <string name="pref_camera_noise_reduction_default">off</string>
+     <string name="pref_camera_noise_reduction_default">fast</string>
 
      <!-- Settings screen, Select See More title -->
      <string name="pref_camera_noise_reduction_title">Noise Reduction</string>
