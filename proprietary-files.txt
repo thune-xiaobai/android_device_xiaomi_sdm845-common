@@ -44,6 +44,8 @@ vendor/etc/acdbdata/Forte/Forte_workspaceFile.qwsp
 vendor/firmware/tas2559_uCDSP.bin
 
 # Audio libraries
+vendor/lib/hw/audio.primary.sdm845.so
+vendor/lib64/hw/audio.primary.sdm845.so
 vendor/lib/libacdb-fts.so
 vendor/lib/libacdbloader.so
 vendor/lib/libacdbrtac.so
@@ -63,10 +65,14 @@ vendor/lib64/libacdbrtac.so
 vendor/lib64/libadiertac.so
 vendor/lib64/libaudcal.so
 vendor/lib64/soundfx/libasphere.so
+vendor/lib64/soundfx/libdirac.so
 vendor/lib64/soundfx/libqcbassboost.so
+vendor/lib/soundfx/libqcreverb.so
 vendor/lib64/soundfx/libqcvirt.so
 vendor/lib64/soundfx/libshoebox.so
-
+vendor/lib/libultrasound.so
+vendor/lib64/libnotifyaudiohal.so
+vendor/lib64/libultrasound.so
 
 # Bluetooth
 vendor/bin/wcnss_filter
@@ -331,6 +337,7 @@ vendor/firmware/ipa_fws.elf
 
 # Listen
 vendor/lib/hw/sound_trigger.primary.sdm845.so
+vendor/lib64/hw/sound_trigger.primary.sdm845.so
 vendor/lib/libsmwrapper.so
 
 # Machine Learning
@@ -685,7 +692,6 @@ vendor/lib/libtinyxml2_1.so
 vendor/lib/libtzdrmgenprov.so
 vendor/lib/lib-uceservice.so
 vendor/lib/libulp2.so
-vendor/lib/libultrasound.so
 vendor/lib/libvideoutils.so
 vendor/lib/libvidhance.so
 vendor/lib/libvppclient.so
@@ -810,7 +816,6 @@ vendor/lib64/libmulawdec.so
 vendor/lib64/libnanopb.so
 vendor/lib64/libnetfilter_conntrack.so
 vendor/lib64/libnfnetlink.so
-vendor/lib64/libnotifyaudiohal.so
 vendor/lib64/libOmxAacDec.so
 vendor/lib64/libOmxAlacDec.so
 vendor/lib64/libOmxAlacDecSw.so
@@ -879,7 +884,6 @@ vendor/lib64/libsysmon_cdsp_skel.so
 vendor/lib64/libteeclientjni.so
 vendor/lib64/libtida.so
 vendor/lib64/libtzdrmgenprov.so
-vendor/lib64/libultrasound.so
 vendor/lib64/libvppclient.so
 vendor/lib64/libvpphcp.so
 vendor/lib64/libvpphvx.so
@@ -940,8 +944,8 @@ vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so
 vendor/lib64/hw/android.hardware.tests.libhwbinder@1.0-impl.so
 vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so
+vendor/lib/hw/com.qualcomm.qti.bluetooth_audio@1.0-impl.so
 vendor/lib64/hw/com.qualcomm.qti.bluetooth_audio@1.0-impl.so
-vendor/lib64/hw/sound_trigger.primary.sdm845.so
 vendor/lib64/hw/vendor.qti.esepowermanager@1.0-impl.so
 vendor/lib64/hw/vendor.qti.gnss@1.1-impl.so
 vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so
@@ -1064,6 +1068,8 @@ vendor/etc/camera/watermark_font_2300_3199.dat
 vendor/etc/qdcm_calib_data_jdi_fhd_video_dsi_panel.xml
 vendor/etc/dsi_jdi_fhd_nt35596s_video_display_mi.xml
 
+vendor/lib/libsdmcore.so
+vendor/lib64/libsdmcore.so
 vendor/lib/vendor.display.config@1.0_vendor.so
 vendor/lib/vendor.display.config@1.1_vendor.so
 vendor/lib/vendor.xiaomi.hardware.displayfeature@1.0_vendor.so
@@ -1075,3 +1081,4 @@ vendor/lib64/hw/displayfeature.default.so
 vendor/bin/hw/vendor.xiaomi.hardware.displayfeature@1.0-service
 vendor/etc/init/vendor.xiaomi.hardware.displayfeature@1.0-service.rc
 
+vendor/etc/init/android.hardware.audio@2.0-service.rc
