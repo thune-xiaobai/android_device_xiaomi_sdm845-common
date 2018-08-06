@@ -15,3 +15,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="polaris-user 8.0.0 OPR1.170623.032 V9.5.18.0.ODGCNFA release-keys"
 
 BUILD_FINGERPRINT := Xiaomi/polaris/polaris:8.0.0/OPR1.170623.032/V9.5.18.0.ODGCNFA:user/release-keys
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.mk.maintainer=wood
