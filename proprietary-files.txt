@@ -49,7 +49,6 @@ vendor/lib64/libaudioparsers.so
 vendor/lib64/libaudioroute_ext.so
 
 # Bluetooth
-vendor/bin/wcnss_filter
 vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0_vendor.so
 vendor/lib/hw/com.qualcomm.qti.bluetooth_audio@1.0-impl.so
 vendor/lib64/libbtnv.so
