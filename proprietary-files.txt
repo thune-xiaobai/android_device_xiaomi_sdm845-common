@@ -97,10 +97,20 @@ vendor/lib/libarcsoft_dualcam_image_optical_zoom.so
 vendor/lib/libarcsoft_dualcam_refocus_rear_t.so
 vendor/lib/libarcsoft_dualcam_refocus_rear_w.so
 vendor/lib/libarcsoft_dualcam_video_optical_zoom.so
+vendor/lib/libarcsoft_portrait_editing.so
+vendor/lib/libarcsoft_portrait_lighting_c.so
+vendor/lib/libarcsoft_portrait_lighting.so
 vendor/lib/libarcsoft_high_dynamic_range.so
+vendor/lib/libfit_face_beauty.so
 vendor/lib/libFaceGrade.so
 vendor/lib/libmpbase.so
+vendor/lib/libmibokeh_845.so
+vendor/lib/libremosaic_daemon.so
+vendor/lib/libremosaiclib.so
+vendor/lib/libsymphony-cpu.so
+vendor/lib/libsymphonypower.so
 vendor/lib/libXMFD_AgeGender.so
+vendor/lib/mibokeh_845_opencl.bin
 
 vendor/lib/camera/com.qti.sensor.imx363.so
 vendor/lib/camera/com.qti.sensormodule.imx333.bin
@@ -161,14 +171,6 @@ vendor/lib/camera/components/com.xiaomi.node.mibokeh.so
 vendor/lib/camera/components/etc/GpuKernelRepo.pb
 vendor/lib/camera/components/etc/model_zm.dlc
 vendor/lib/camera/components/etc/morpho_lowlight4.0.xml
-
-# Camera eeprom
-
-# Camera firmware
-
-# Camera ISP
-
-# Camera OIS
 
 # Charger
 vendor/bin/hvdcp_opti
