@@ -64,7 +64,7 @@ BOARD_ROOT_EXTRA_SYMLINKS := /vendor/lib/dsp:/dsp
 TARGET_BOARD_PLATFORM := sdm845
 
 # ANT+
-BOARD_ANT_WIRELESS_DEVICE := "qualcomm-uart"
+BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
 
 # Assert
 # TARGET_BOARD_INFO_FILE := $(PLATFORM_PATH)/board-info.txt
