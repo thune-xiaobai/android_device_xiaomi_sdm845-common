@@ -16,7 +16,7 @@
 
 BOARD_VENDOR := xiaomi
 
-PLATFORM_PATH := device/xiaomi/polaris
+PLATFORM_PATH := device/xiaomi/sdm845-common
 
 TARGET_SPECIFIC_HEADER_PATH := $(PLATFORM_PATH)/include
 
@@ -53,7 +53,6 @@ BOARD_KERNEL_PAGESIZE := 4096
 BOARD_RAMDISK_OFFSET := 0x01000000
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sdm845
-TARGET_KERNEL_CONFIG := polaris_defconfig
 
 BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200n8 earlycon=msm_geni_serial,0xA84000 androidboot.hardware=qcom androidboot.console=ttyMSM0 video=vfb:640x400,bpp=32,memsize=3072000 msm_rtb.filter=0x237 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 service_locator.enable=1 swiotlb=2048 androidboot.configfs=true androidboot.usbcontroller=a600000.dwc3
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
@@ -243,5 +242,3 @@ WIFI_DRIVER_FW_PATH_P2P := "p2p"
 WIFI_DRIVER_OPERSTATE_PATH := "/sys/class/net/wlan0/operstate"
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
-# Inherit from proprietary files
-include vendor/xiaomi/polaris/BoardConfigVendor.mk

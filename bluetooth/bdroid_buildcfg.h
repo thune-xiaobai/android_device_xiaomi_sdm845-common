@@ -28,6 +28,8 @@ static inline const char* BtmGetDefaultName()
 
     if (strstr(product_device, "polaris"))
         return "Xiaomi Mi MIX 2S";
+    if (strstr(product_device, "dipper"))
+        return "Xiaomi MI 8";
 
     // Fallback to ro.product.model
     return "";

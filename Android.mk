@@ -16,7 +16,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter polaris,$(TARGET_DEVICE)),)
+ifneq ($(filter polaris dipper,$(TARGET_DEVICE)),)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
@@ -51,6 +51,6 @@ $(WCNSS_MAC_SYMLINK): $(LOCAL_INSTALLED_MODULE)
 
 ALL_DEFAULT_INSTALLED_MODULES += $(WCNSS_INI_SYMLINK) $(WCNSS_MAC_SYMLINK)
 
-include device/xiaomi/polaris/tftp.mk
+include device/xiaomi/sdm845-common/tftp.mk
 
 endif
