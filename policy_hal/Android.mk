@@ -1,4 +1,4 @@
-ifeq ($(TARGET_DEVICE),polaris)
+ifneq ($(filter polaris dipper,$(TARGET_DEVICE)),)
 
 ifneq ($(USE_LEGACY_AUDIO_POLICY), 1)
 ifeq ($(USE_CUSTOM_AUDIO_POLICY), 1)
