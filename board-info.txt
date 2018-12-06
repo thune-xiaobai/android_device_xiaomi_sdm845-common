@@ -1,1 +1,1 @@
-require version-trustzone=TZ.XF.5.0.1-138559-8
+require version-modem=2018-11-21 21:42:08,8.11.23

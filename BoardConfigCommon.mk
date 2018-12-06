@@ -66,7 +66,7 @@ TARGET_BOARD_PLATFORM := sdm845
 BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
 
 # Assert
-# TARGET_BOARD_INFO_FILE := $(PLATFORM_PATH)/board-info.txt
+TARGET_BOARD_INFO_FILE := $(PLATFORM_PATH)/board-info.txt
 
 # Audio
 BOARD_USES_ALSA_AUDIO := true
