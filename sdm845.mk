@@ -22,6 +22,9 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_ENFORCE_RRO_TARGETS := \
     framework-res
 
+-include $(LOCAL_PATH)/device-props.mk
+-include $(LOCAL_PATH)/vendor_prop.mk
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.xml \
@@ -96,7 +99,9 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.effect@2.0-impl \
     android.hardware.audio@2.0-impl \
     android.hardware.audio@2.0-service \
-    android.hardware.soundtrigger@2.0-impl
+    android.hardware.audio.effect@4.0-impl \
+    android.hardware.audio@4.0-impl \
+    android.hardware.soundtrigger@2.1-impl
 
 PRODUCT_PACKAGES += \
     tinymix
@@ -116,15 +121,13 @@ PRODUCT_COPY_FILES += \
 # ANT+
 PRODUCT_PACKAGES += \
     AntHalService \
-    com.dsi.ant.antradio_library \
-    libantradio
-
-PRODUCT_COPY_FILES += \
-    external/ant-wireless/antradio-library/com.dsi.ant.antradio_library.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.dsi.ant.antradio_library.xml
+    libantradio \
+    antradio_app \
+    libvolumelistener
 
 # Camera
-PRODUCT_PACKAGES += \
-    SnapdragonCamera
+# PRODUCT_PACKAGES += \
+#     SnapdragonCamera
 
 PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0_32 \
@@ -211,8 +214,8 @@ PRODUCT_COPY_FILES += \
 
 # Health
 PRODUCT_PACKAGES += \
-    android.hardware.health@1.0-impl \
-    android.hardware.health@1.0-service
+    android.hardware.health@2.0-impl \
+    android.hardware.health@2.0-service
 
 # HIDL
 PRODUCT_PACKAGES += \
@@ -277,22 +280,19 @@ PRODUCT_PACKAGES += \
 
 # NFC
 PRODUCT_PACKAGES += \
+    android.hardware.nfc@1.0-impl \
     com.android.nfc_extras \
-    com.gsma.services.nfc \
     com.nxp.nfc.nq \
     com.nxp.nfc.nq.xml \
     libnqnfc-nci \
-    nfc_nci.nqx.default \
     libnqp61-jcop-kit \
+    nfc_nci.nqx.default \
     NQNfcNci \
     nqnfcee_access.xml \
     nqnfcse_access.xml \
-    Tag
-
-PRODUCT_PACKAGES += \
-    android.hardware.nfc@1.0-impl \
-    vendor.nxp.hardware.nfc@1.0-impl \
-    vendor.nxp.hardware.nfc@1.0-service
+    SecureElement \
+    Tag \
+    vendor.nxp.hardware.nfc@1.1-service
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/nfc/libnfc-brcm.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-brcm.conf
@@ -350,6 +350,9 @@ PRODUCT_PACKAGES += \
 
 # RIL
 PRODUCT_PACKAGES += \
+    android.hardware.radio.config@1.2 \
+    android.hardware.radio@1.2 \
+    android.hardware.secure_element@1.0 \
     librmnetctl \
     libxml2 \
     libprotobuf-cpp-full
